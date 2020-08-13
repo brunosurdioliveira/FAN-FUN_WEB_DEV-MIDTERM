@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        Midterm W2020
+    </title>
+    <link rel="stylesheet" href="Bruno_Midterm.css">
+</head>
+
+<body onload="startUpATM();">
+    <h1>
+        IWD Bank Machine
+    </h1>
+
+    <!-- Account Labels -->
+    <p class="amountStyle" id="pAccountType">[Account Type]</p>
+    <p class="amountStyle" id="pAccountAmount">$$$$</p>
+
+    <!-- Account Tools -->
+    <div>
+
+        <!-- Dropdown Menu -->
+        <div style="float: left; width: 50%;">
+            <h2>Account Selector:</h2>
+            <select id="ddAccountTypeMenu" onchange="accountSelector()">
+                <option selected>Chequing</option>
+                <option>Savings</option>
+            </select>
+        </div>
+
+        <!-- Transaction Tools -->
+        <div style="float: right; width: 50%;">
+            <h2>Transaction Tools:</h2><br>
+            Amount: <input type="text" id="tbTransaction" placeholder="0000.00" />
+            <input type="button" value="Deposit" onclick="deposit()" />
+            <input type="button" value="Withdraw" onclick="withdraw()" />
+        </div>
+
+    </div>
+
+    <!-- Log -->
+    <br><br><br><br><br><br><br><br> <!-- Annoying Spacing -->
+    <p id="pTranactionLog">[Log]</p>
+
+    <!-- Javascript Code -->
+    <script src="Bruno_Midterm.js">
+    </script>
+
+</body>
+
+</html>

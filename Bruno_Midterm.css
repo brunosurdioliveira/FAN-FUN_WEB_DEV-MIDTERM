@@ -1,0 +1,12 @@
+body {
+    background-color: seagreen;
+    color: white;
+    text-align: center;
+}
+
+.amountStyle {
+    font-size: 48px;
+    font-weight: bolder;
+    padding: 5px;
+    color: yellow;
+}
